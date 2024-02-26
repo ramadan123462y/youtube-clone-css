@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+
+    font-size: 10px;
+}
+
+
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100vh;
+}
+
+/* ----------------header start--------------------- */
+
+/* left sections */
+.left-section {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.left-section i {
+
+
+    font-size: 3rem;
+    width: 20%;
+    height: 80%;
+
+
+}
+
+.left-section img {
+
+
+    width: 60%;
+    height: 80%;
+
+}
+
+/* end left sections  */
+
+/* mid sections */
+
+
+
+
+.mid-section {
+
+
+    width: 50%;
+    height: 90%;
+    display: flex;
+    /* border: solid; */
+    justify-content: space-between;
+    gap: 1px;
+    align-items: center;
+}
+
+.mid-section form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-right: none;
+    justify-content: center;
+}
+
+.mid-section form input {
+    width: 80%;
+    height: 100%;
+    padding: 5px;
+    border: 1px gray solid;
+    border-radius: 50px 0px 0px 50px;
+    -webkit-border-radius: 50px 0px 0px 50px;
+    -moz-border-radius: 50px 0px 0px 50px;
+    -ms-border-radius: 50px 0px 0px 50px;
+    -o-border-radius: 50px 0px 0px 50px;
+
+}
+
+.mid-section form input:hover {
+
+    outline: blue 1px solid;
+}
+
+.mid-section form button {
+    width: 10%;
+    height: 100%;
+    cursor: pointer;
+    border: 1px gray solid;
+    border-radius: 0px 50px 50px 0px;
+    -webkit-border-radius: 0px 50px 50px 0px;
+    -moz-border-radius: 0px 50px 50px 0px;
+    -ms-border-radius: 0px 50px 50px 0px;
+    -o-border-radius: 0px 50px 50px 0px;
+    background-color: #f8f8f8;
+}
+
+
+
+.mid-section>i {
+    width: 44.688px;
+    font-size: 2rem;
+    background-color: buttonface;
+    height: 38px;
+    cursor: pointer;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    margin-left: -4%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* end mid sections  */
+
+/* start righ section */
+.right-section {
+
+
+    width: 12%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-section a {
+
+    width: 20%;
+    font-size: 2rem;
+    height: 100%;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+/* end righ section */
+
+header {
+    padding: 8px;
+    width: 100%;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ----------------------- header end --------------- */
+/* start -----------------content  */
+
+.content {
+    height: calc(100vh - 56px);
+    width: 100%;
+    /* border: solid green 2px; */
+    background-color: #f9f9f9;
+
+    display: flex;
+
+
+
+
+}
+
+.content>aside {
+    /* border: solid; */
+
+
+
+    height: 100%;
+    width: 280px;
+    background-color: white;
+    overflow-y: auto;
+
+
+
+    /* scrollbar-color: transparent transparent; */
+    /* scrollbar-width: thin; */
+
+}
+
+.content aside nav {
+
+
+    width: 100%;
+    /* height: 100%; */
+    height: fit-content;
+    /* border: red solid; */
+    margin: 15px 0px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content aside nav a {
+    text-decoration: none;
+    color: black;
+    border-radius: 10px;
+    width: 100%;
+    height: 50px;
+    /* border: solid saddlebrown; */
+    display: flex;
+    align-items: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.content aside nav a:hover {
+
+
+    background-color: #f8f8f8;
+}
+
+.active {
+    background-color: #f8f8f8;
+
+
+
+}
+
+.content aside nav a>i,
+a>span {
+    padding-left: 20px;
+    font-size: 1.4rem;
+    line-height: 2em;
+    font-weight: bolder;
+
+
+
+
+}
+
+.line {
+
+
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid 1px;
+    opacity: 0.3;
+
+}
+
+/* main */
+
+main {
+
+    /* border: solid blue; */
+    width: 100%;
+    height: 100%;
+    padding: 35px 15px;
+    border-top: 1px solid #ddd;
+    overflow-y: auto;
+
+
+
+}
+
+.videos-container {
+
+
+    width: 100%;
+    height: fit-content;
+    /* border: solid saddlebrown; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.video {
+
+    width: 400px;
+    /* border: solid darkmagenta; */
+    height: 325px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.img-video {
+    width: 100%;
+    height: 225px;
+    /* border: solid fuchsia; */
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-video img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+
+}
+
+.details-video {
+
+    width: 351px;
+    height: 100px;
+    /* border: solid yellow; */
+    display: flex;
+}
+
+.img-creator {
+    margin-top: 5px;
+
+    width: 36px;
+    height: 36px;
+    /* padding: 2px; */
+    /* border: solid black; */
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.img-creator img {
+
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.title {
+    padding: 5px;
+    width: calc(100% - 36px);
+    /* border: solid brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+
+}
+
+.title a {
+
+    font-size: medium;
+    /* border: solid blueviolet; */
+    display: flex;
+    width: 100%;
+
+
+
+
+}
+
+.title-video {
+
+
+    font-weight: 600;
+
+}
+
+.video-creator {
+
+
+    opacity: 0.7;
+
+}
+
+/* end _ main */
+
+/* end  -----------------content  */
